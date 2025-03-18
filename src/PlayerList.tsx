@@ -93,7 +93,7 @@ const IntroTitle: React.FC<{ person?: TopPlayer }> = ({ person }) => {
         </div>
       </div>
 
-      {/* Judul 1 */}
+      {/* Judul */}
       <h1
         style={{
           fontSize: "7rem",
