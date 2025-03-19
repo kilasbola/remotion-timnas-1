@@ -7,7 +7,7 @@ import {
   FaCalendar as Calendar,
 } from "react-icons/fa";
 
-import { TbSoccerField as Field } from "react-icons/tb";
+import { TbSoccerField as Field, TbHomeFilled as Home } from "react-icons/tb";
 
 import { BsPSquareFill as Position
 } from "react-icons/bs";
@@ -189,7 +189,7 @@ export const PlayerCard: React.FC<{
 
           {/* Minutes Played */}
           <div className="flex items-center text-left gap-4">
-            <Time className="h-9 w-9 text-amber-500" />
+            <Home className="h-9 w-9 text-pink-500" />
             <div>
                 <p className="text-1xl text-gray-400 uppercase font-extrabold tracking-widest" style={{ fontFamily: PoppinsFont}}>Place Of Birth</p>
                 <p className="text-3xl font-extrabold" style={{ fontFamily: interFont}}>{person.place_of_birth ? person.place_of_birth.toLocaleString() : "N/A"}</p>
@@ -209,7 +209,7 @@ export const PlayerCard: React.FC<{
           <div className="col-span-2 flex items-center text-left gap-4 p-3 bg-gray-600 rounded-md">
             <Stadium className="h-12 w-12 text-gray-300" />
             <div>
-              <p className="text-1xl text-gray-200 uppercase font-extrabold tracking-widest" style={{ fontFamily: RubikFont}}>Team</p>
+              <p className="text-1xl text-gray-200 uppercase font-extrabold tracking-widest" style={{ fontFamily: RubikFont}}>Association</p>
                 <p className="text-3xl text-gray-50 font-bold">{person.club || "N/A"}</p>
             </div>
           </div>
